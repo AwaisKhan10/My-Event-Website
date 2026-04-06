@@ -1,0 +1,223 @@
+import image6 from "../assets/music.avif";
+import image7 from "../assets/teachnalogy.jpeg";
+import image8 from "../assets/art.webp";
+import image9 from "../assets/sports.jpg";
+import image10 from "../assets/business.jpg";
+import image11 from "../assets/fun.jpg";
+import image12 from "../assets/food.jpg";
+import image13 from "../assets/entertainments.jpg";
+import image14 from "../assets/fashion.jpeg";
+import image15 from "../assets/education.jpeg";
+import image16 from "../assets/networking.jpeg";
+import image17 from "../assets/workship.avif";
+import image18 from "../assets/charity.jpg";
+import image19 from "../assets/festival.jpg";
+import image20 from "../assets/mic.webp";
+
+/**
+ * Demo events — filter/search in UI is fully functional on this list.
+ */
+export const mockEvents = [
+  {
+    id: "e1",
+    title: "Neon Nights Live",
+    date: "2026-05-12",
+    time: "20:00",
+    venue: "Arena Stadium",
+    city: "Karachi",
+    categoryId: "music",
+    price: 3500,
+    image: image6,
+    spotsLeft: 120,
+  },
+  {
+    id: "e2",
+    title: "Karachi Tech Summit",
+    date: "2026-04-22",
+    time: "09:00",
+    venue: "Expo Center",
+    city: "Karachi",
+    categoryId: "technology",
+    price: 2500,
+    image: image7,
+    spotsLeft: 340,
+  },
+  {
+    id: "e3",
+    title: "Modern Art Walk",
+    date: "2026-05-03",
+    time: "17:00",
+    venue: "Clifton Gallery",
+    city: "Karachi",
+    categoryId: "art",
+    price: 800,
+    image: image8,
+    spotsLeft: 45,
+  },
+  {
+    id: "e4",
+    title: "City Cricket Cup — Final",
+    date: "2026-04-18",
+    time: "18:30",
+    venue: "National Stadium",
+    city: "Karachi",
+    categoryId: "sports",
+    price: 1500,
+    image: image9,
+    spotsLeft: 890,
+  },
+  {
+    id: "e5",
+    title: "Founders Breakfast Meetup",
+    date: "2026-04-25",
+    time: "08:00",
+    venue: "Business District Tower",
+    city: "Karachi",
+    categoryId: "business",
+    price: 1200,
+    image: image10,
+    spotsLeft: 28,
+  },
+  {
+    id: "e6",
+    title: "Comedy Night Special",
+    date: "2026-05-08",
+    time: "21:00",
+    venue: "Theatre Hall",
+    city: "Karachi",
+    categoryId: "fun",
+    price: 1800,
+    image: image11,
+    spotsLeft: 64,
+  },
+  {
+    id: "e7",
+    title: "Street Food Festival",
+    date: "2026-05-01",
+    time: "16:00",
+    venue: "Seaview Lawn",
+    city: "Karachi",
+    categoryId: "food-drinks",
+    price: 500,
+    image: image12,
+    spotsLeft: 2000,
+  },
+  {
+    id: "e8",
+    title: "Bollywood Beats Night",
+    date: "2026-04-30",
+    time: "19:00",
+    venue: "Grand Ballroom",
+    city: "Karachi",
+    categoryId: "entertainment",
+    price: 4200,
+    image: image13,
+    spotsLeft: 210,
+  },
+  {
+    id: "e9",
+    title: "Summer Fashion Gala",
+    date: "2026-05-15",
+    time: "18:00",
+    venue: "Luxury Hotel",
+    city: "Karachi",
+    categoryId: "fashion",
+    price: 6000,
+    image: image14,
+    spotsLeft: 90,
+  },
+  {
+    id: "e10",
+    title: "AI & Future Skills Bootcamp",
+    date: "2026-05-06",
+    time: "10:00",
+    venue: "Innovation Hub",
+    city: "Karachi",
+    categoryId: "education",
+    price: 4500,
+    image: image15,
+    spotsLeft: 55,
+  },
+  {
+    id: "e11",
+    title: "Startup Networking Mixer",
+    date: "2026-04-28",
+    time: "19:30",
+    venue: "Rooftop Lounge",
+    city: "Karachi",
+    categoryId: "networking",
+    price: 0,
+    image: image16,
+    spotsLeft: 75,
+  },
+  {
+    id: "e12",
+    title: "Design Systems Workshop",
+    date: "2026-05-10",
+    time: "11:00",
+    venue: "Co-work Space",
+    city: "Karachi",
+    categoryId: "workshop",
+    price: 3200,
+    image: image17,
+    spotsLeft: 22,
+  },
+  {
+    id: "e13",
+    title: "Run for Hope 2026",
+    date: "2026-05-20",
+    time: "06:00",
+    venue: "Beach Park",
+    city: "Karachi",
+    categoryId: "charity",
+    price: 500,
+    image: image18,
+    spotsLeft: 500,
+  },
+  {
+    id: "e14",
+    title: "Spring Music Festival",
+    date: "2026-05-02",
+    time: "15:00",
+    venue: "Outdoor Arena",
+    city: "Karachi",
+    categoryId: "festival",
+    price: 2800,
+    image: image19,
+    spotsLeft: 1500,
+  },
+  {
+    id: "e15",
+    title: "Product Leaders Conference",
+    date: "2026-05-18",
+    time: "09:30",
+    venue: "Convention Center",
+    city: "Karachi",
+    categoryId: "conference",
+    price: 5500,
+    image: image20,
+    spotsLeft: 180,
+  },
+  {
+    id: "e16",
+    title: "Indie Acoustic Evening",
+    date: "2026-05-25",
+    time: "20:30",
+    venue: "Cafe Courtyard",
+    city: "Lahore",
+    categoryId: "music",
+    price: 2200,
+    image: image6,
+    spotsLeft: 40,
+  },
+];
+
+export function formatEventDate(iso) {
+  const d = new Date(iso + "T12:00:00");
+  return d.toLocaleDateString(undefined, {
+    weekday: "short",
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+  });
+}
